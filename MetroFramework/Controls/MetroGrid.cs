@@ -175,7 +175,7 @@ namespace MetroFramework.Controls
             {
                 this.FirstDisplayedScrollingRowIndex--;
             }
-            else if (e.Delta < 0)
+            else if (e.Delta < 0 && (this.FirstDisplayedScrollingRowIndex + 1 < this.RowCount))
             {
                 this.FirstDisplayedScrollingRowIndex++;
             }
@@ -305,8 +305,12 @@ namespace MetroFramework.Controls
             }
             else
             {
-                if (_scrollbar.Value >= 0 && _scrollbar.Value < _grid.Rows.Count)
-                    _grid.FirstDisplayedScrollingRowIndex = _scrollbar.Value + (_scrollbar.Value == 1 ? -1 : 1);
+                try
+                {
+                    if (_scrollbar.Value >= 0 && _scrollbar.Value < _grid.Rows.Count)
+                        _grid.FirstDisplayedScrollingRowIndex = _scrollbar.Value + (_scrollbar.Value == 1 ? -1 : 1);
+                }
+                catch (ArgumentOutOfRangeException) { }
             }
 
             _grid.Invalidate();
