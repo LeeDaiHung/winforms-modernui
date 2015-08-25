@@ -39,6 +39,8 @@ namespace MetroFramework
         Magenta,
         Purple,
         Red,
-        Yellow
+        Yellow,
+        BlueJeans,
+        Bittersweet
     }
 }

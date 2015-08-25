@@ -750,6 +750,12 @@ namespace MetroFramework.Drawing
                 case MetroColorStyle.Yellow:
                     return MetroColors.Yellow;
 
+                case MetroColorStyle.BlueJeans:
+                    return MetroColors.BlueJeans;
+
+                case MetroColorStyle.Bittersweet:
+                    return MetroColors.Bittersweet;
+
                 default:
                     return MetroColors.Blue;
             }
@@ -801,6 +807,12 @@ namespace MetroFramework.Drawing
                 case MetroColorStyle.Yellow:
                     return MetroBrushes.Yellow;
 
+                case MetroColorStyle.BlueJeans:
+                    return MetroBrushes.BlueJeans;
+
+                case MetroColorStyle.Bittersweet:
+                    return MetroBrushes.Bittersweet;
+
                 default:
                     return MetroBrushes.Blue;
             }
@@ -851,6 +863,12 @@ namespace MetroFramework.Drawing
 
                 case MetroColorStyle.Yellow:
                     return MetroPens.Yellow;
+
+                case MetroColorStyle.BlueJeans:
+                    return MetroPens.BlueJeans;
+
+                case MetroColorStyle.Bittersweet:
+                    return MetroPens.Bittersweet;
 
                 default:
                     return MetroPens.Blue;

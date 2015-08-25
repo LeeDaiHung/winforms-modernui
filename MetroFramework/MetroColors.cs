@@ -138,5 +138,21 @@ namespace MetroFramework
                 return Color.FromArgb(255, 196, 37);
             }
         }
+
+        public static Color BlueJeans
+        {
+            get
+            {
+                return Color.FromArgb(74, 137, 220);
+            }
+        }
+
+        public static Color Bittersweet
+        {
+            get
+            {
+                return Color.FromArgb(233, 87, 63);
+            }
+        }
     }
 }

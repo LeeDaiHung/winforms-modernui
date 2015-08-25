@@ -151,5 +151,21 @@ namespace MetroFramework
                 return GetSaveBrush("Yellow", MetroColors.Yellow);
             }
         }
+
+        public static SolidBrush BlueJeans
+        {
+            get
+            {
+                return GetSaveBrush("BlueJeans", MetroColors.BlueJeans);
+            }
+        }
+
+        public static SolidBrush Bittersweet
+        {
+            get
+            {
+                return GetSaveBrush("Bittersweet", MetroColors.Bittersweet);
+            }
+        }
     }
 }
